@@ -10,7 +10,10 @@ const compiler = webpack(webpackConfig)
 
 const app = express()
 const server = http.createServer(app)
-const PORT = process.env.PORT || 5000
+
+const ENV = process.env
+const NODE_ENV = ENV.NODE_ENV
+const PORT = ENV.PORT || 5000
 
 app.use(require("webpack-dev-middleware")(compiler, {
   noInfo: true,

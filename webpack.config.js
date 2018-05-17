@@ -19,14 +19,13 @@ const webpackConfig = {
   },
 
   entry: [
-    './source/javascripts/application.js'
+    './source/main.js'
   ],
 
   resolve: {
     extensions: ['.scss', '.js', '.css', '.json'],
     modules: [
-      path.resolve(__dirname, 'source/stylesheets'),
-      path.resolve(__dirname, 'source/javascripts'),
+      path.resolve(__dirname, 'source/components'),
       path.resolve(__dirname, 'node_modules')
     ]
   },
@@ -45,7 +44,10 @@ const webpackConfig = {
         use: {
           loader: 'babel-loader',
           options: {
-            cacheDirectory: true
+            cacheDirectory: true,
+            plugins: [
+              'react-hot-loader/babel'
+            ]
           }
         }
       }
@@ -70,6 +72,7 @@ if (env == 'development') {
   webpackConfig.mode = 'development'
 
   webpackConfig.entry.unshift(
+    'react-hot-loader/patch',
     'webpack-hot-middleware/client'
   )
 

@@ -8,7 +8,7 @@
     "start": "yarn run server:dev",
     "server:dev": "cross-env NODE_ENV=development node ./server/development",
     "server:prod": "cross-env NODE_ENV=development node ./server/production",
-    "server:test": "cross-env NODE_ENV=development node ./server-test.js",
+    "webpack-dev-server": "cross-env NODE_ENV=development node ./webpack-dev-server.js",
     "build": "cross-env NODE_ENV=production webpack --bail -p"
   },
   "dependencies": {
@@ -28,6 +28,10 @@
     "morgan": "^1.9.0",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.0.10",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.20.1",
     "webpack": "^4.5.0",

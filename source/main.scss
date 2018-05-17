@@ -1,0 +1,25 @@
+$black: #000;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  color: $black;
+}
+
+nav {
+  a {
+    margin-left: 1rem;
+    text-decoration: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
