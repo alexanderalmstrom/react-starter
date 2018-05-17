@@ -9,7 +9,7 @@ class App extends Component {
   render () {
     return (
       <BrowserRouter>
-        <div className="main">
+        <div>
           <header className="header">
             <Link to="/" className="logo">React Starter</Link>
           </header>

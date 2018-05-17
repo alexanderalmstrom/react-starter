@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 
+import Body from './Body'
+
 class Home extends Component {
   render () {
     return (
-      <div className="page">
+      <Body className="page home">
         <h1>Home</h1>
         <p>This is the homepage.</p>
-      </div>
+      </Body>
     )
   }
 }
