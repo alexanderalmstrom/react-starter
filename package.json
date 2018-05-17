@@ -8,7 +8,6 @@
     "start": "yarn run server:dev",
     "server:dev": "cross-env NODE_ENV=development node ./server/development",
     "server:prod": "cross-env NODE_ENV=development node ./server/production",
-    "webpack-dev-server": "cross-env NODE_ENV=development node ./webpack-dev-server.js",
     "build": "cross-env NODE_ENV=production webpack --bail -p"
   },
   "dependencies": {
