@@ -10,6 +10,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="main">
+          <header className="header">
+            <Link to="/" className="logo">React Starter</Link>
+          </header>
           <nav className="nav">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
