@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 
-import Body from './Body'
-
 class About extends Component {
   render () {
     return (
-      <Body isDark={true} class="about">
+      <div className="main about">
         <h1>About</h1>
         <p>Wow this is really cool!</p>
-      </Body>
+      </div>
     )
   }
 }
